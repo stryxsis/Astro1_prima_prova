@@ -53,12 +53,15 @@ label:hover {
 a {
     font-weight: 600;
     text-decoration: none;
-    transform: translate(1s);
+    transition-duration: 0.5s;
 }
+
+a:visited{ color: inherit }
 
 label:hover > a {
     color: beige;
     transform: translate(1s);
+    transition-duration: 0.5s;
 }
 </style>
 <div class="nav">
