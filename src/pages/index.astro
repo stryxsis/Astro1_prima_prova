@@ -11,6 +11,20 @@ const pageTitle = "Home Page";
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
+		<style>
+			p {
+				font-size: 1.5rem;
+				font-weight: bold;
+				margin: 0;
+				color: white;
+			}
+			.jass {
+				display: inline-block;
+				margin: 0;
+				padding: 0 10px;
+				background: linear-gradient(90deg, #ff0000, #ff8800, #fff200, #059200, #0b2cd2 ,#670060);
+			}
+		</style>
 	</head>
 	<body>
 		<a href="/">Home</a>
@@ -18,7 +32,9 @@ const pageTitle = "Home Page";
 		<a href="/blog/">Blog</a>
 
 		<h1>{pageTitle}</h1>
-		<h2>Welcom to blog wefwefwef</h2>
-		<h2>Welc</h2>
+		<h2>Welcom to blog</h2>
+		<div class="jass">
+			<p>Jass giuro sei troppo gay</p>
+		</div>
 	</body>
 </html>
