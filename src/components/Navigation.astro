@@ -1,0 +1,73 @@
+---
+---
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav {
+    width: 100%;
+    display: flex;
+    background-color: rgba(199, 195, 195, 0.66));
+    border-radius: 15px;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+label {
+    display: flex;
+    padding: 0 3.5rem;
+    height: 100%;
+    align-items: center;
+    cursor: pointer;
+}
+
+label:hover {
+    background-color: black;
+    border-radius: 15px;
+}
+
+.div-logo {
+    padding: 1rem 2rem;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 15px 15px 15px 15px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+a {
+    font-weight: 600;
+    text-decoration: none;
+    transform: translate(1s);
+}
+
+label:hover > a {
+    color: beige;
+    transform: translate(1s);
+}
+</style>
+<div class="nav">
+    <div class="div-logo">
+        <p class="logo">Vlad Costin</p>
+    </div>
+    <div class="nav-button">
+        <label><a href="/">Home</a></label>
+        <label><a href="/about/">About</a></label>
+        <label><a href="/blog/">Blog</a></label>
+    </div>
+</div>
