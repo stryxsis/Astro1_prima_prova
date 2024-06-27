@@ -15,17 +15,19 @@
     border: 1px solid black;
 }
 
-label {
+a {
     display: flex;
     padding: 0 3.5rem;
     height: 100%;
     align-items: center;
     cursor: pointer;
+    text-decoration: none;
 }
 
-label:hover {
+a:hover {
     background-color: black;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .div-logo {
@@ -50,22 +52,21 @@ label:hover {
     cursor: pointer;
 }
 
-a {
+label {
     font-weight: 600;
-    text-decoration: none;
     transition-duration: 0.5s;
 }
 
 a:visited{ color: inherit }
 
-label:hover > a {
+a:hover > label {
     color: beige;
     transform: translate(1s);
     transition-duration: 0.5s;
 }
 
 @media only screen and (max-width: 600px) {
-    label {
+    a {
         padding: 0 1.5rem;
     }
 
@@ -78,11 +79,11 @@ label:hover > a {
         font-size: 0.8rem;
     }
 
-    label:hover > a {
+    a:hover > label {
         color: black;
     }
 
-    label:hover {
+    a:hover {
         background-color: #f1f5f9;
     }
 
@@ -93,8 +94,8 @@ label:hover > a {
         <p class="logo">Vlad Costin</p>
     </div>
     <div class="nav-button">
-        <label><a href="/">Home</a></label>
-        <label><a href="/about/">About</a></label>
-        <label><a href="/blog/">Blog</a></label>
+        <a href="/"><label>Home</label></a>
+        <a href="/about/"><label>About</label></a>
+        <a href="/blog/"><label>Blog</label></a>
     </div>
 </div>
