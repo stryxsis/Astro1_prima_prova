@@ -1,8 +1,47 @@
 ---
-const platform = "github";
-const username = "withastro";
----
+// const platformGit = "github";
+// const platformIg = "instagram";
+// const platformTik = "tiktok";
+// const platformFk = "facebook";
+// const usernameGit = "stryxsis";
+// const usernameIg = "giovanniionita_";
+// const usernameTik = "@idinnahui";
+// const usernameFk = "giovanni.ionita.7";
 
+import Social from './Social.astro';
+
+---
+<style>
+    /* p {
+        color: aliceblue;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .social {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .main {
+        background-color: blue;
+    } */
+
+    .footer {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+</style>
 <footer>
-  <p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
+  <!-- <p>Learn more about my projects on <a href={`https://www.${platformGit}.com/${usernameGit}`}>{platformGit}</a>!</p>  -->
+  <!-- <p>Seguimi anche su <a href={`https://www.${platformIg}.com/${usernameIg}`}>{platformIg}</a> <a href={`https://www.${platformTik}.com/${usernameTik}`}>{platformTik}</a> <a href={`https://www.${platformFk}.com/${usernameFk}`}>{platformFk}</a></p>  -->
+        <p>Seguimi suoi miei social:</p>
+        <div class="footer">
+            <Social platform="instagram" username="giovanniionita_"/>
+            <Social platform="github" username="stryxsis" />
+            <Social platform="youtube" username="astrodotbuild" />
+        </div>
+  
 </footer>

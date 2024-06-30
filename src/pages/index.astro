@@ -1,61 +1,8 @@
 ---
-import Navigation from '../components/Navigation.astro';
-import Footer from '../components/Footer.astro';
-import '../styles/global.css';
-
+import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "Home Page";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-		<style>
-			p {
-				font-size: 1.5rem;
-				font-weight: bold;
-				margin: 0;
-				color: white;
-			}
-			.flex{
-				display: flex;
-				align-items: center;
-			}
-			.jass {
-				display: inline-block;
-				height: 40px;
-				margin: 0;
-				padding: 0 10px;
-				background: linear-gradient(90deg, #ff0000, #ff8800, #fff200, #059200, #0b2cd2 ,#670060);
-				border-radius: 25px;
-			}
-			.palla1 {
-				display: flex;
-				width: 100px;
-				height: 100px;
-				background-color: #670060;
-				border-radius: 100%;
-				margin: 0px -22px;
-			}
-		</style>
-	</head>
-	<body>
-		<Navigation />
-
-		<h1>{pageTitle}</h1>
-		<h2>Welcom to blog</h2>
-		<!--<div class="flex">
-			<div class="jass">
-				<p>Jass giuro sei troppo gay</p>
-			</div>
-			<div>
-				<div class="palla1"></div>
-				<div class="palla1"></div>
-			</div>
-		</div> -->
-		<Footer />
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+	<h2>Sto passando questo elemnto come slot, lo sto passando da index a BaseLayout  </h2>
+</BaseLayout>
